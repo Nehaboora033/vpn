@@ -7,13 +7,52 @@
     <title>VPN</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" type="icon/x-icon" href="">
     <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="icon" type="icon/x-icon" href="./assets/images/svg/logo.svg">
+
 </head>
+
 <body class="h-screen">
-
-
-
+    <!-- nav -->
+    <nav class="w-full p-10">
+        <div class="container mx-auto px-3 flex justify-between items-center">
+            <div class="flex gap-2 items-center cursor-pointer hover:scale-110">
+                <img src="./assets/images/svg/logo.svg" alt="logo">
+                <p class="font-medium fs_xl">Lasle<span class="font-bold">VPN</span></p>
+            </div>
+            <button class="menu-icon w-11 h-7 cursor-pointer flex  justify-between flex-col border-none lg:hidden"
+                onclick="menuIcon()">
+                <span class="w-full h-1 bg-[#F53838] rounded"></span>
+                <span class="w-full h-1 bg-[#F53838] rounded"></span>
+                <span class="w-full h-1 bg-[#F53838] rounded"></span>
+            </button>
+            <div class="flex gap-9 items-center menu-list">
+                <a href=""
+                    class="text-[#4F5665] font-normal fs_md  hover:font-semiboldhover:text-[#F53855] transition-colors duration-200">About</a>
+                <a href=""
+                    class="text-[#4F5665] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200">Features</a>
+                <a href=""
+                    class="text-[#4F5665] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200">Pricing</a>
+                <a href=""
+                    class="text-[#4F5665] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200">Testimonials</a>
+                <a href=""
+                    class="text-[#4F5665] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200">Help</a>
+            </div>
+            <div class="flex gap-7 items-center">
+                <p
+                    class="font-medium text-black fs_md hover:text-[#F53855] transition-color duration-100 cursor-pointer hover:font-bold hover:scale-110 whitespace-nowrap">
+                    Sign In</p>
+                <button class="fw_md fs_md text-[#F53855] py-3 px-11 rounded-3xl border-1 border-[#F53855] hover:text-white hover:bg-[#F53855] transition-colors duration-100
+                cursor-pointer whitespace-nowrap">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container mx-auto px-3">
+            <div class="w-1/2 bg-teal-700"></div>
+            <div class="w-1/2  bg-red-400"></div>
+        </div>
+    </header>
     <script src="./assets/js/script.js"></script>
 </body>
 

@@ -4,6 +4,8 @@
     font-family: "Rubik", sans-serif;
 }
 
+/* section6 */
+
 :root {
     --text-xl: 35px;
     --text-lg: 18px;
@@ -161,4 +163,27 @@
     .rating {
         margin-right: 6px;
     }
+}
+
+/* section5 */
+.loop-slider {
+    .company {
+        animation-name: loop;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: var(--direction);
+        animation-duration: var(--duration);
+    } }
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.company img{
+    max-width: none;
 }

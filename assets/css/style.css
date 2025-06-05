@@ -1,28 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-*{
+
+* {
     font-family: "Rubik", sans-serif;
-}
-
-
-
-.min-vh-100 {
-    min-height: 100vh;
-}
-
-.background {
-    background-color: #FFFFFF;
-}
-
-
-
-
-
-
-
-
-
-.justify-content {
-    justify-content: space-between;
 }
 
 :root {
@@ -32,18 +11,24 @@
     --text-sm: 14px;
 }
 
-.max-width-height {
-    max-width: 182px;
-    height: 50px;
+.heading {
+    font-size: var(--text-xl);
 }
 
-.padding {
-    padding: 30px;
+.name {
+    font-size: var(--text-lg);
 }
 
+.decription {
+    font-size: var(--text-md);
+}
 
-.mt-60 {
-    margin-top: 60px;
+.location {
+    font-size: var(--text-sm);
+}
+
+.about {
+    font-size: var(--text-md);
 }
 
 .slick-track {
@@ -64,16 +49,16 @@
     padding-bottom: 30px;
 }
 
+.button:hover {
+    background-color: #F53838;
+}
+
 .button svg path {
     transition: all 100ms linear;
 }
 
 .button:hover svg path {
     fill: #FFFFFF;
-}
-
-.float {
-    float: right;
 }
 
 .slick-current .card {
@@ -113,7 +98,16 @@
     bottom: -75px !important;
 }
 
+@media(max-width:425px) {
+    .button-parent {
+        display: none;
+    }
 
+    .slick-dots {
+        display: flex !important;
+        justify-content: center;
+    }
+}
 
 @media(max-width:525px) {
     .name {
@@ -150,17 +144,6 @@
     .card {
         padding: 15px;
     }
-
-    .button-parent {
-        display: none;
-    }
-
-    .slick-dots {
-        display: flex !important;
-        justify-content: center;
-    }
-
-
 }
 
 @media(max-width:998px) {

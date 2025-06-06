@@ -19,40 +19,43 @@
 
 <body class="h-screen">
     <!-- nav -->
-    <!-- <nav class="w-full p-10">
-        <div class="container mx-auto px-3 flex justify-between items-center">
+    <nav class="w-full sm:p-5 p-3 fixed top-0 bg-white z-20">
+        <div class="container mx-auto flex justify-between items-center">
             <div class="flex gap-2 items-center cursor-pointer hover:scale-110">
                 <img src="./assets/images/svg/logo.svg" alt="logo">
-                <p class="font-medium fs_xl">Lasle<span class="font-bold">VPN</span></p>
+                <p class="font-medium  max-[480px]:hidden fs_xl">Lasle<span class="font-bold">VPN</span></p>
             </div>
-            <button class="menu-icon w-11 h-7 cursor-pointer flex  justify-between flex-col border-none lg:hidden"
-                onclick="menuIcon()">
-                <span class="w-full h-1 bg-[#F53838] rounded"></span>
-                <span class="w-full h-1 bg-[#F53838] rounded"></span>
-                <span class="w-full h-1 bg-[#F53838] rounded"></span>
-            </button>
-            <div class="flex gap-9 items-center menu-list">
-                <a href=""
-                    class="text-[#4F5665] font-normal fs_md  hover:font-semibold hover:text-[#F53855] transition-colors duration-200">About</a>
-                <a href=""
-                    class="text-[#4F5665] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200">Features</a>
-                <a href=""
-                    class="text-[#4F5665] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200">Pricing</a>
-                <a href=""
-                    class="text-[#4F5665] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200">Testimonials</a>
-                <a href=""
-                    class="text-[#4F5665] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200">Help</a>
-            </div>
-            <div class="flex gap-7 items-center">
-                <p
-                    class="font-medium text-black fs_md hover:text-[#F53855] transition-color duration-100 cursor-pointer hover:font-bold hover:scale-110 whitespace-nowrap">
-                    Sign In</p>
-                <button
-                    class="fw_md fs_md text-[#F53855] py-3 px-11 rounded-3xl border-1 border-[#F53855] hover:text-white hover:bg-[#F53855] transition-colors duration-200  shadow-[#F5383859] hover:shadow-xl cursor-pointer whitespace-nowrap">Sign
-                    Up</button>
+            <div class="flex items-center xl:gap-[250px] lg:gap-[100px] max-lg:flex-row-reverse gap-[16px]">
+
+                <button class="menu-icon w-11 h-7 cursor-pointer flex z-30 justify-between flex-col border-none lg:hidden"
+                    onclick="menuIcon()">
+                    <span class="w-full h-1 bg-[#F53838] rounded transition duration-100 ease-linear"></span>
+                    <span class="w-full h-1 bg-[#F53838] rounded"></span>
+                    <span class="w-full h-1 bg-[#F53838] rounded"></span>
+                </button>
+                <div class="flex gap-9 items-center menu-list lg:flex-row max-lg:flex-col max-lg:justify-center max-lg:h-full max-lg:w-[75%] max-lg:fixed max-lg:top-0 max-lg:-right-full z-10  transition duration-100 ease-linear max-lg:bg-white">
+                    <a href=""
+                        class="text-[#4F5665] max-lg:text-[#F53838] font-normal fs_md  hover:font-semibold hover:text-[#F53855] transition-colors duration-200">About</a>
+                    <a href=""
+                        class="text-[#4F5665]  max-lg:text-[#F53838] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200">Features</a>
+                    <a href=""
+                        class="text-[#4F5665]  max-lg:text-[#F53838] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200">Pricing</a>
+                    <a href=""
+                        class="text-[#4F5665] max-lg:text-[#F53838] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200">Testimonials</a>
+                    <a href=""
+                        class="text-[#4F5665] max-lg:text-[#F53838] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200">Help</a>
+                </div>
+                <div class="flex sm:gap-7 gap-4 items-center">
+                    <p
+                        class="font-medium text-black fs_md hover:text-[#F53855] transition-color duration-100 cursor-pointer hover:font-bold hover:scale-110 whitespace-nowrap">
+                        Sign In</p>
+                    <button
+                        class="fw_md fs_md text-[#F53855] py-3 px-8 sm:px-11 rounded-3xl border-1 border-[#F53855] hover:text-white hover:bg-[#F53855] transition-colors duration-200  shadow-[#F5383859] hover:shadow-xl cursor-pointer whitespace-nowrap">Sign
+                        Up</button>
+                </div>
             </div>
         </div>
-    </nav> -->
+    </nav>
     <!-- header -->
     <header>
         <div class="container mx-auto px-3 mt-28 flex flex-col">
@@ -73,8 +76,8 @@
                 </div>
             </div>
             <div
-                class="md:py-[37px] md:px-[90px] pb-[36px] flex justify-between shadow-[0_18px_44px_-35px_rgba(0,0,0,0.2)] rounded-xl md:flex-row flex-col gap-14 md:gap-0 ">
-                <div class="flex gap-9 items-center">
+                class="md:py-[37px] md:px-[90px] pb-[36px] flex justify-between shadow-[0_18px_44px_-35px_rgba(0,0,0,0.2)] rounded-xl min-[535px]:flex-row flex-col gap-14 md:gap-0 ">
+                <div class="flex sm:gap-9 gap-6 items-center">
                     <div class="h-[55px] w-[55px] rounded-full bg-[#FFECEC] flex items-center justify-center">
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -88,7 +91,7 @@
                     </div>
                 </div>
                 <div class="w-1 bg-[#EEEFF2] h-[125px] rounded-sm md:block hidden"></div>
-                <div class="flex gap-9 items-center">
+                <div class="flex sm:gap-9 gap-6 items-center">
                     <div class="h-[55px] w-[55px] rounded-full bg-[#FFECEC] flex items-center justify-center">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -102,7 +105,7 @@
                     </div>
                 </div>
                 <div class="w-1 bg-[#EEEFF2] h-[125px] rounded-sm md:block hidden"></div>
-                <div class="flex gap-9 items-center">
+                <div class="flex sm:gap-9 gap-6 items-center">
                     <div class="h-[55px] w-[55px] rounded-full bg-[#FFECEC] flex items-center justify-center">
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -121,11 +124,11 @@
     <!-- section2 -->
     <section>
         <div
-            class="container mx-auto px-3 flex mt-[96px] justify-between mb-[143px] lg:flex-row flex-col items-center gap-5">
-            <div class="lg:w-1/2  w-full">
+            class="container mx-auto px-3 flex mt-[96px] justify-between md:mb-[143px] mb-5 md:flex-row flex-col items-center gap-5">
+            <div class="md:w-1/2  w-full">
                 <img src="./assets/images/png/section2-img.png" alt="image" class="w-full cursor-pointer">
             </div>
-            <div class="lg:w-1/2  max-w-full lg:max-w-[427px] flex flex-col justify-end">
+            <div class="md:w-1/2  max-w-full lg:max-w-[427px] flex flex-col justify-end">
                 <h2 class="text-black fw_md fs_3xl ">We Provide Many Features You Can Use</h2>
                 <p class="text-[#4F5665] my-8 ">You can explore the features that we provide
                     with fun and have their own
@@ -153,14 +156,14 @@
         </div>
     </section>
     <!-- section3 -->
-    <section class="bg-[#FBFBFB] pb-[150px]">
+    <section class="bg-[#FBFBFB] sm:pb-[150px] pb-[100px]">
         <div class="container mx-auto px-3">
             <h2 class="font-medium fs_3xl text-black text-center mb-[20px] pt-20">Choose Your Plan</h2>
             <p class="font-normal fs_md text-center mx-auto text-[#4F5665] max-w-[555px] mb-[60px]">Let's choose the
                 package that is best for you and explore it happily and cheerfully.</p>
-            <div class="grid lg:grid-cols-3 sm:grid-cols-2  grid-cols-1 xl:gap-12 lg:gap-8 gap-6">
+            <div class="grid md:grid-cols-3 grid-cols-2  max-[500px]:grid-cols-1 xl:gap-12 lg:gap-8 gap-6">
                 <div
-                    class="border-2 hover:border-[#F53838] border-[#DDDDDD] rounded-xl flex flex-col justify-between   xl:px-[90px] md:px-[40px] pt-[79px] pb-[50px] cursor-pointer">
+                    class=" max-[500px]:w-[300px] max-[500px]:mx-auto  border-2 hover:border-[#F53838] border-[#DDDDDD] rounded-xl flex flex-col justify-between   xl:px-[90px] md:px-[40px] pt-[79px] pb-[50px] cursor-pointer">
                     <div class="flex flex-col items-center">
                         <img src="./assets/images/svg/gift.svg" alt="image">
                         <p class="fs_lg font-medium text-black my-8 text-center">Free Plan</p>
@@ -186,11 +189,11 @@
                     <div class="flex flex-col  items-center mt-[40px] lg:mt-0">
                         <p class="font-medium fs_2xl text-black  mb-5 text-center">Free</p>
                         <button
-                            class="font-bold fs_md text-[#F53838] border-2 border-[#F53838] rounded-[50px] max-w-[330px] cursor-pointer py-3 px-14 hover:text-white hover:bg-[#F53838] transition-colors duration-200  shadow-[#F5383859] hover:shadow-xl">Select</button>
+                            class=" font-bold fs_md text-[#F53838] border-2 border-[#F53838] rounded-[50px] max-w-[330px] cursor-pointer py-3 px-14 hover:text-white hover:bg-[#F53838] transition-colors duration-200  shadow-[#F5383859] hover:shadow-xl">Select</button>
                     </div>
                 </div>
                 <div
-                    class="border-2 hover:border-[#F53838] border-[#DDDDDD] rounded-xl flex  flex-col  justify-between  xl:px-[90px] md:px-[40px] pt-[79px] pb-[50px] cursor-pointer ">
+                    class=" max-[500px]:w-[300px] max-[500px]:mx-auto  border-2 hover:border-[#F53838] border-[#DDDDDD] rounded-xl flex  flex-col  justify-between  xl:px-[90px] md:px-[40px] pt-[79px] pb-[50px] cursor-pointer ">
                     <div class="flex flex-col items-center">
                         <img src="./assets/images/svg/gift.svg" alt="image">
                         <p class="fs_lg font-medium text-black my-8 text-center whitespace-nowrap">Standard Plan</p>
@@ -226,7 +229,7 @@
                     </div>
                 </div>
                 <div
-                    class="border-2  hover:border-[#F53838] border-[#DDDDDD] rounded-xl flex flex-col justify-between  xl:px-[90px] pt-[79px] md:px-[40px] pb-[50px] cursor-pointer">
+                    class="max-[500px]:w-[300px] max-[500px]:mx-auto  border-2  hover:border-[#F53838] border-[#DDDDDD] rounded-xl flex flex-col justify-between  xl:px-[90px] pt-[79px] md:px-[40px] pb-[50px] cursor-pointer">
                     <div class="pb-[50px] flex flex-col items-center">
                         <img src="./assets/images/svg/gift.svg" alt="image">
                         <p class="fs_lg font-medium text-black my-8 text-center">Premium Plan</p>
@@ -272,7 +275,7 @@
                 <h2 class="font-medium fs_3xl text-black text-center max-w-[383px] mx-auto">Huge Global Network of Fast
                     VPN
                 </h2>
-                <p class="text-center text-[#4F5665] fs_md font-normal max-w-[555px] mx-auto mt-5 mb-36">See <span
+                <p class="text-center text-[#4F5665] fs_md font-normal max-w-[555px] mx-auto mt-5 sm:mb-36 mb-24">See <span
                         class="font-bold ">LaslesVPN</span>
                     everywhere
                     to make it easier for you when you move locations.</p>
@@ -307,7 +310,7 @@
         </div>
     </section>
     <!-- section5 -->
-    <section class="md:pb-[240px] pb-[300px]">
+    <section class="pb-[57px]">
 
         <div class="container mx-auto px-3">
             <div class="flex justify-center flex-col items-center">
@@ -493,16 +496,18 @@
             </button>
         </div>
     </section>
-    <!-- footer -->
-    <footer class="md:pt-[182px] pt-[130px] pb-[100px] bg-[#F8F8F8] relative">
-        <div class="container mx-auto px-3 ">
+    <!-- section6 -->
+    <section class="bg-[linear-gradient(to_bottom,_#FFFFFF_50%,_#F6F6F7_50%)]">
+        <div class="container mx-auto px-3 pb-15 ">
             <div
-                class=" xl:max-w-[1140px] w-full mx-4  left-[50%] translate-x-[-50%] top-[-28%] absolute bg-white flex  flex-col md:flex-row gap-7 md:gap-0 items-center justify-between md:py-[58px] py-[40px] xl:px-[70px] lg:px-[50px] px-5 rounded-xl shadow-[4px_10px_60px_-26px_rgba(0,0,0,0.2)]">
+                class="  w-full bg-white flex  flex-col md:flex-row gap-7 md:gap-0 items-center justify-between md:py-[58px] py-[40px] xl:px-[70px] lg:px-[50px] px-5 rounded-xl shadow-[4px_10px_60px_-26px_rgba(0,0,0,0.2)]">
                 <div>
                     <p class="font-medium fs_3xl  text-center md:text-start max-w-[371px]  text-[#0B132A]">Subscribe Now
                         for Get Special Features!
                     </p>
-                    <p class="font-normal fs_md text-[#4F5665] mt-5 text-center">Let's subscribe with us and find the
+                    <p class="font-normal fs_md text-[#4F5665] mt-5 text-center md:text-start">Let's subscribe with us
+                        and
+                        find the
                         fun.</p>
                 </div>
                 <button
@@ -510,8 +515,12 @@
                     Subscribe Now
                 </button>
             </div>
-
-            <div class="grid md:grid-cols-2 gap-6 mt-[60px]">
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="pb-[100px] bg-[#F8F8F8] ">
+        <div class="container mx-auto px-3 ">
+            <div class="grid md:grid-cols-2 gap-6">
                 <div>
                     <img src="./assets/images/svg/footer logo.svg" alt="image" class="cursor-pointer">
                     <p class="font-normal fs_md text-[#4F5665] max-w-[340px] mt-5"><span
@@ -552,65 +561,79 @@
                 <div class="flex justify-between">
                     <div class="flex flex-col">
                         <p class="font-medium fs_lg text-[#0B132A] ">Product</p>
-                        <a href="#" class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit">
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
                             Download
                             <span
                                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
-                        <a href="#" class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit">
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
                             Pricing
                             <span
                                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
-                        <a href="#" class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit">
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
                             Locations
                             <span
                                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
-                        <a href="#" class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit">
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
                             Server
                             <span
                                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
-                        <a href="#" class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit">
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
                             Countries
                             <span
                                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
-                        <a href="#" class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit">
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
                             Blog
                             <span
                                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
                     </div>
                     <div class="flex flex-col">
                         <p class="font-medium fs_lg text-[#0B132A] ">Engage</p>
-                        <a href="#" class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit">
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
                             LaslesVPN ?
                             <span
                                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
-                        <a href="#" class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit">
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
                             FAQ
                             <span
                                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
-                        <a href="#" class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit">
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
                             Tutorials
                             <span
                                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
-                        <a href="#" class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit">
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
                             About Us
                             <span
                                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
-                        <a href="#" class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit">
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
                             Privacy Policy
                             <span
                                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
-                        <a href="#" class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit">
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
                             Terms of Service
                             <span
                                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
                     </div>
                     <div class="flex flex-col">
                         <p class="font-medium fs_lg text-[#0B132A]">Earn Money</p>
-                        <a href="#" class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit">
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
                             Affiliate
                             <span
                                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
-                        <a href="#" class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit">
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
                             Become Partner
                             <span
                                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>

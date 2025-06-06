@@ -2,10 +2,10 @@
     --fs-4xl: 42px;
     --fs-3xl: 30px;
     --fs-2xl: 23px;
-    --fs-xl: 20px;
+    --fs-xl: 19px;
     --fs-lg: 18px;
-    --fs-md: 16px;
-    --fs-sm: 14px;
+    --fs-md: 14px;
+    --fs-sm: 12px;
 
 
     --fw-lg: 700;
@@ -59,8 +59,11 @@
         --fs-4xl: 50px;
         --fs-3xl: 35px;
         --fs-2xl: 25px;
-    
-       
+        --fs-xl: 20px;
+        --fs-lg: 18px;
+        --fs-md: 16px;
+        --fs-sm: 14px;
+
 
     }
 }

@@ -30,7 +30,7 @@ $('.autoplay').slick({
         }
     ]
 });
-                  
+
 
 
 
@@ -76,6 +76,19 @@ $('.slider').slick({
 });
 
 
+// nav bar//
+window.onscroll = function () {
+    var nav = document.querySelector("nav");
+    if (window.scrollY > 1) { // Adjust scroll trigger
+        nav.classList.add("scrolled");
+    } else {
+        nav.classList.remove("scrolled");
+    }
+};
 
 
+function menuIcon() {
+    document.querySelector('.menu-list').classList.toggle('show');
+    document.querySelector('nav').classList.toggle('activeNavBar');
 
+};

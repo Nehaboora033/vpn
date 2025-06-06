@@ -19,7 +19,7 @@
 
 <body class="h-screen">
     <!-- nav -->
-    <nav class="w-full p-10">
+    <!-- <nav class="w-full p-10">
         <div class="container mx-auto px-3 flex justify-between items-center">
             <div class="flex gap-2 items-center cursor-pointer hover:scale-110">
                 <img src="./assets/images/svg/logo.svg" alt="logo">
@@ -52,12 +52,12 @@
                     Up</button>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <!-- header -->
     <header>
-        <div class="container mx-auto px-3 mt-28">
-            <div class="flex mb-24">
-                <div class="w-1/2 max-w-[555px]">
+        <div class="container mx-auto px-3 mt-28 flex flex-col ">
+            <div class="flex mb-24 lg:flex-row flex-col-reverse items-center">
+                <div class="lg:w-1/2 w-full max-w-[555px]">
                     <p class="font-medium fs_4xl">Want anything to be easy with<span class="font-bold">LaslesVPN.</span>
                     </p>
                     <p class="font-normal  mt-5 mb-12 fs_md text-[#4F5665]">Provide a network for all your
@@ -67,7 +67,7 @@
                         class="text-white font-bold fs_md px-[78px] py-[18px] bg-[#F53838] rounded-xl cursor-pointer shadow-[#F5383859] hover:shadow-xl transition-shadow duration-200">Get
                         Started</button>
                 </div>
-                <div class="w-1/2">
+                <div class="lg:w-1/2 w-full">
                     <img src="./assets/images/png/header-img.png" alt="image" class="w-full cursor-pointer">
                 </div>
             </div>
@@ -119,29 +119,31 @@
     </header>
     <!-- section2 -->
     <section>
-        <div class="container mx-auto px-3 flex mt-[96px] justify-between mb-[143px]">
-            <div class="w-1/2">
+        <div
+            class="container mx-auto px-3 flex mt-[96px] justify-between mb-[143px] lg:flex-row flex-col items-center gap-5">
+            <div class="lg:w-1/2  w-full">
                 <img src="./assets/images/png/section2-img.png" alt="image" class="w-full cursor-pointer">
             </div>
-            <div class="w-1/2 max-w-[427px] flex flex-col justify-end">
-                <h2 class="text-black fw_md fs_3xl">We Provide Many Features You Can Use</h2>
-                <p class="text-[#4F5665] my-8">You can explore the features that we provide with fun and have their own
+            <div class="lg:w-1/2  w-full max-w-[427px] flex flex-col justify-end">
+                <h2 class="text-black fw_md fs_3xl text-center lg:text-start">We Provide Many Features You Can Use</h2>
+                <p class="text-[#4F5665] my-8 lg:text-start text-center">You can explore the features that we provide
+                    with fun and have their own
                     functions
                     each feature.</p>
-                <div>
-                    <div class="flex gap-[10px] mb-5">
+                <div class="flex flex-col mx-auto lg:mx-0 ">
+                    <div class="flex gap-[10px] mb-5 items-center">
                         <img src="./assets/images/svg/check.svg" alt="check-box" class="cursor-pointer">
                         <p class="fw_sm fs_sm text-[#4F5665]">Powerfull online protection.</p>
                     </div>
-                    <div class="flex gap-[10px] mb-5">
+                    <div class="flex gap-[10px] mb-5 items-center">
                         <img src="./assets/images/svg/check.svg" alt="check-box" class="cursor-pointer">
                         <p class="fw_sm fs_sm text-[#4F5665]">Internet without borders.</p>
                     </div>
-                    <div class="flex gap-[10px] mb-5">
+                    <div class="flex gap-[10px] mb-5 items-center">
                         <img src="./assets/images/svg/check.svg" alt="check-box" class="cursor-pointer">
                         <p class="fw_sm fs_sm text-[#4F5665]">Supercharged VPN</p>
                     </div>
-                    <div class="flex gap-[10px] mb-5">
+                    <div class="flex gap-[10px] mb-5 items-center">
                         <img src="./assets/images/svg/check.svg" alt="check-box" class="cursor-pointer">
                         <p class="fw_sm fs_sm text-[#4F5665]">No specific time limits.</p>
                     </div>
@@ -149,73 +151,73 @@
             </div>
         </div>
     </section>
-    <!-- section4 -->
+    <!-- section3 -->
     <section class="bg-[#FBFBFB] pb-[150px]">
         <div class="container mx-auto px-3">
             <h2 class="font-medium fs_3xl text-black text-center mb-[20px] pt-20">Choose Your Plan</h2>
             <p class="font-normal fs_md text-center mx-auto text-[#4F5665] max-w-[555px] mb-[60px]">Let's choose the
                 package that is best for you and explore it happily and cheerfully.</p>
-            <div class="grid grid-cols-3 gap-12">
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2  grid-cols-1 xl:gap-12 lg:gap-8 sm:gap-6">
                 <div
-                    class="border-2 hover:border-[#F53838] border-[#DDDDDD] rounded-xl flex flex-col justify-between px-[92px] pt-[79px] pb-[50px] cursor-pointer">
+                    class="border-2 hover:border-[#F53838] border-[#DDDDDD] rounded-xl flex flex-col justify-between   xl:px-[90px] md:px-[40px] pt-[79px] pb-[50px] cursor-pointer">
                     <div class="flex flex-col items-center">
                         <img src="./assets/images/svg/gift.svg" alt="image">
                         <p class="fs_lg font-medium text-black my-8 text-center">Free Plan</p>
                         <div>
                             <div class="flex  mb-3 gap-5">
                                 <img src="./assets/images/svg/tick.svg" alt="image">
-                                <p class="fs_sm font-normal text-[#4F5665]">Unlimited Bandwitch</p>
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Unlimited Bandwitch</p>
                             </div>
                             <div class="flex  mb-3 gap-5">
                                 <img src="./assets/images/svg/tick.svg" alt="image">
-                                <p class="fs_sm font-normal text-[#4F5665]">Encrypted Connection</p>
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Encrypted Connection</p>
                             </div>
                             <div class="flex  mb-3 gap-5">
                                 <img src="./assets/images/svg/tick.svg" alt="image">
-                                <p class="fs_sm font-normal text-[#4F5665]">No Traffic Logs</p>
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">No Traffic Logs</p>
                             </div>
                             <div class="flex  mb-3 gap-5">
                                 <img src="./assets/images/svg/tick.svg" alt="image">
-                                <p class="fs_sm font-normal text-[#4F5665]">Works on All Devices</p>
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Works on All Devices</p>
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col  items-center">
+                    <div class="flex flex-col  items-center mt-[40px] lg:mt-0">
                         <p class="font-medium fs_2xl text-black  mb-5 text-center">Free</p>
                         <button
                             class="font-bold fs_md text-[#F53838] border-2 border-[#F53838] rounded-[50px] max-w-[330px] cursor-pointer py-3 px-14 hover:text-white hover:bg-[#F53838] transition-colors duration-200  shadow-[#F5383859] hover:shadow-xl">Select</button>
                     </div>
                 </div>
                 <div
-                    class="border-2 hover:border-[#F53838] border-[#DDDDDD] rounded-xl flex  flex-col  justify-between px-[92px] pt-[79px] pb-[50px] cursor-pointer ">
+                    class="border-2 hover:border-[#F53838] border-[#DDDDDD] rounded-xl flex  flex-col  justify-between  xl:px-[90px] md:px-[40px] pt-[79px] pb-[50px] cursor-pointer ">
                     <div class="flex flex-col items-center">
                         <img src="./assets/images/svg/gift.svg" alt="image">
-                        <p class="fs_lg font-medium text-black my-8 text-center">Standard Plan</p>
+                        <p class="fs_lg font-medium text-black my-8 text-center whitespace-nowrap">Standard Plan</p>
                         <div>
                             <div class="flex  mb-3 gap-5">
                                 <img src="./assets/images/svg/tick.svg" alt="image">
-                                <p class="fs_sm font-normal text-[#4F5665]">Unlimited Bandwitch</p>
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Unlimited Bandwitch</p>
                             </div>
                             <div class="flex  mb-3 gap-5">
                                 <img src="./assets/images/svg/tick.svg" alt="image">
-                                <p class="fs_sm font-normal text-[#4F5665]">Encrypted Connection</p>
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Encrypted Connection</p>
                             </div>
                             <div class="flex  mb-3 gap-5">
                                 <img src="./assets/images/svg/tick.svg" alt="image">
-                                <p class="fs_sm font-normal text-[#4F5665]">Yes Traffic Logs</p>
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Yes Traffic Logs</p>
                             </div>
                             <div class="flex  mb-3 gap-5">
                                 <img src="./assets/images/svg/tick.svg" alt="image">
-                                <p class="fs_sm font-normal text-[#4F5665]">Works on All Devices</p>
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Works on All Devices</p>
                             </div>
                             <div class="flex  mb-3 gap-5">
                                 <img src="./assets/images/svg/tick.svg" alt="image">
-                                <p class="fs_sm font-normal text-[#4F5665]">Connect Anyware</p>
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Connect Anyware</p>
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col  items-center">
-                        <p class="font-medium fs_2xl text-black mb-5 text-center">$9 <span
+                    <div class="flex flex-col  items-center mt-[30px] lg:gap-0">
+                        <p class="font-medium fs_2xl text-black mb-5 text-center whitespace-nowrap">$9 <span
                                 class="font-normal fs_2xl text-[#4F5665]">/ mo</span></p>
                         <button
                             class="font-bold fs_md text-[#F53838] border-2 border-[#F53838] rounded-[50px] max-w-[330px] cursor-pointer py-3 px-14 hover:text-white hover:bg-[#F53838] transition-colors duration-200  shadow-[#F5383859] hover:shadow-xl">Select
@@ -223,35 +225,35 @@
                     </div>
                 </div>
                 <div
-                    class="border-2 hover:border-[#F53838] border-[#DDDDDD] rounded-xl flex flex-col justify-between px-[92px] pt-[79px] pb-[50px] cursor-pointer">
+                    class="border-2 hover:border-[#F53838] border-[#DDDDDD] rounded-xl flex flex-col justify-between  xl:px-[90px] pt-[79px] md:px-[40px] pb-[50px] cursor-pointer">
                     <div class="pb-[50px] flex flex-col items-center">
                         <img src="./assets/images/svg/gift.svg" alt="image">
                         <p class="fs_lg font-medium text-black my-8 text-center">Premium Plan</p>
                         <div>
                             <div class="flex  mb-3 gap-5">
                                 <img src="./assets/images/svg/tick.svg" alt="image">
-                                <p class="fs_sm font-normal text-[#4F5665]">Unlimited Bandwitch</p>
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Unlimited Bandwitch</p>
                             </div>
                             <div class="flex  mb-3 gap-5">
                                 <img src="./assets/images/svg/tick.svg" alt="image">
-                                <p class="fs_sm font-normal text-[#4F5665]">Encrypted Connection</p>
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Encrypted Connection</p>
                             </div>
                             <div class="flex  mb-3 gap-5">
                                 <img src="./assets/images/svg/tick.svg" alt="image">
-                                <p class="fs_sm font-normal text-[#4F5665]">No Traffic Logs</p>
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">No Traffic Logs</p>
                             </div>
                             <div class="flex  mb-3 gap-5">
                                 <img src="./assets/images/svg/tick.svg" alt="image">
-                                <p class="fs_sm font-normal text-[#4F5665]">Works on All Devices</p>
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Works on All Devices</p>
                             </div>
                             <div class="flex  mb-3 gap-5">
                                 <img src="./assets/images/svg/tick.svg" alt="image">
-                                <p class="fs_sm font-normal text-[#4F5665]">Get New Features</p>
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Get New Features</p>
                             </div>
                         </div>
                     </div>
                     <div class="flex flex-col  items-center">
-                        <p class="font-medium fs_2xl text-black  mb-5 text-center">$12<span
+                        <p class="font-medium fs_2xl text-black  mb-5 text-center whitespace-nowrap">$12<span
                                 class="font-normal fs_2xl text-[#4F5665]">/ mo</span></p>
                         <button
                             class="font-bold fs_md text-[#F53838] border-2 border-[#F53838] rounded-[50px] max-w-[330px] cursor-pointer py-3 px-14 hover:text-white hover:bg-[#F53838] transition-colors duration-200  shadow-[#F5383859] hover:shadow-xl">Select
@@ -261,7 +263,7 @@
             </div>
         </div>
     </section>
-    <!-- section5 -->
+    <!-- section4 -->
     <section class="bg-[#FBFBFB]">
         <div class="container mx-auto px-3">
 
@@ -303,7 +305,7 @@
             </div>
         </div>
     </section>
-    <!-- section6 -->
+    <!-- section5 -->
     <section class="pb-[240px]">
 
         <div class="container mx-auto px-3">
@@ -314,7 +316,8 @@
                     our customers who have joined us with great pleasure
                     when using this crazy feature.</p>
             </div>
-
+        </div>
+        <div class="container ml-auto">
 
             <div class=" slider mt-[60px]">
                 <div class=" card max-w-[400px] rounded-xl border-2  p-[30px] h-full border-[#DDDDDD] cursor-pointer ">
@@ -467,47 +470,45 @@
                         problems. LaslesVPN always the best”.</p>
                 </div>
             </div>
-
-
-            <div class="justify-end flex gap-2 mr-[70px] button-parent">
-                <button
-                    class="prev button flex items-center justify-center  cursor-pointer w-[60px] h-[60px] rounded-[50%] bg-[white] hover:bg-[#F53838] transition duration-100 ease-linear z-10 relative border-2 border-[#F53838]"
-                    onclick="">
-                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M18.75 8.11875H3.925L8.4625 2.66875C8.67467 2.41348 8.77675 2.08438 8.74628 1.75385C8.7158 1.42332 8.55527 1.11843 8.3 0.906253C8.04473 0.69408 7.71563 0.592002 7.3851 0.622477C7.05456 0.652952 6.74967 0.813482 6.5375 1.06875L0.2875 8.56875C0.245451 8.62841 0.207849 8.69108 0.175 8.75625C0.175 8.81875 0.175 8.85625 0.0875002 8.91875C0.0308421 9.06208 0.0011764 9.21464 0 9.36875C0.0011764 9.52286 0.0308421 9.67543 0.0875002 9.81875C0.0875002 9.88125 0.0874998 9.91875 0.175 9.98125C0.207849 10.0464 0.245451 10.1091 0.2875 10.1688L6.5375 17.6688C6.65503 17.8099 6.8022 17.9233 6.96856 18.0011C7.13491 18.0789 7.31636 18.1191 7.5 18.1188C7.79207 18.1193 8.07511 18.0176 8.3 17.8313C8.42657 17.7263 8.5312 17.5974 8.60789 17.452C8.68458 17.3066 8.73183 17.1474 8.74692 16.9837C8.76202 16.82 8.74466 16.6549 8.69586 16.4979C8.64705 16.3409 8.56775 16.1951 8.4625 16.0688L3.925 10.6188H18.75C19.0815 10.6188 19.3995 10.4871 19.6339 10.2526C19.8683 10.0182 20 9.70027 20 9.36875C20 9.03723 19.8683 8.71929 19.6339 8.48487C19.3995 8.25045 19.0815 8.11875 18.75 8.11875Z"
-                            fill="#F53838" />
-                    </svg>
-                </button>
-                <button
-                    class="next button flex items-center justify-center  cursor-pointer w-[60px] h-[60px] rounded-[50%] bg-[white] hover:bg-[#F53838] transition duration-100 ease-linear z-10 relative border-2 border-[#F53838]"
-                    onclick="">
-                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1.25 8.11875H16.075L11.5375 2.66875C11.3253 2.41348 11.2232 2.08438 11.2537 1.75385C11.2842 1.42332 11.4447 1.11843 11.7 0.906253C11.9553 0.69408 12.2844 0.592002 12.6149 0.622477C12.9454 0.652952 13.2503 0.813482 13.4625 1.06875L19.7125 8.56875C19.7545 8.62841 19.7922 8.69108 19.825 8.75625C19.825 8.81875 19.825 8.85625 19.9125 8.91875C19.9692 9.06208 19.9988 9.21464 20 9.36875C19.9988 9.52286 19.9692 9.67543 19.9125 9.81875C19.9125 9.88125 19.9125 9.91875 19.825 9.98125C19.7922 10.0464 19.7545 10.1091 19.7125 10.1688L13.4625 17.6688C13.345 17.8099 13.1978 17.9233 13.0314 18.0011C12.8651 18.0789 12.6836 18.1191 12.5 18.1188C12.2079 18.1193 11.9249 18.0176 11.7 17.8313C11.5734 17.7263 11.4688 17.5974 11.3921 17.452C11.3154 17.3066 11.2682 17.1474 11.2531 16.9837C11.238 16.82 11.2553 16.6549 11.3041 16.4979C11.3529 16.3409 11.4322 16.1951 11.5375 16.0688L16.075 10.6188H1.25C0.91848 10.6188 0.600536 10.4871 0.366116 10.2526C0.131695 10.0182 0 9.70027 0 9.36875C0 9.03723 0.131695 8.71929 0.366116 8.48487C0.600536 8.25045 0.91848 8.11875 1.25 8.11875Z"
-                            fill="#F53838" />
-                    </svg>
-                </button>
-            </div>
+        </div>
+        <div class="justify-end flex gap-2 mr-[70px] button-parent">
+            <button
+                class="prev button flex items-center justify-center  cursor-pointer w-[60px] h-[60px] rounded-[50%] bg-[white] hover:bg-[#F53838] transition duration-100 ease-linear z-10 relative border-2 border-[#F53838]"
+                onclick="">
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.75 8.11875H3.925L8.4625 2.66875C8.67467 2.41348 8.77675 2.08438 8.74628 1.75385C8.7158 1.42332 8.55527 1.11843 8.3 0.906253C8.04473 0.69408 7.71563 0.592002 7.3851 0.622477C7.05456 0.652952 6.74967 0.813482 6.5375 1.06875L0.2875 8.56875C0.245451 8.62841 0.207849 8.69108 0.175 8.75625C0.175 8.81875 0.175 8.85625 0.0875002 8.91875C0.0308421 9.06208 0.0011764 9.21464 0 9.36875C0.0011764 9.52286 0.0308421 9.67543 0.0875002 9.81875C0.0875002 9.88125 0.0874998 9.91875 0.175 9.98125C0.207849 10.0464 0.245451 10.1091 0.2875 10.1688L6.5375 17.6688C6.65503 17.8099 6.8022 17.9233 6.96856 18.0011C7.13491 18.0789 7.31636 18.1191 7.5 18.1188C7.79207 18.1193 8.07511 18.0176 8.3 17.8313C8.42657 17.7263 8.5312 17.5974 8.60789 17.452C8.68458 17.3066 8.73183 17.1474 8.74692 16.9837C8.76202 16.82 8.74466 16.6549 8.69586 16.4979C8.64705 16.3409 8.56775 16.1951 8.4625 16.0688L3.925 10.6188H18.75C19.0815 10.6188 19.3995 10.4871 19.6339 10.2526C19.8683 10.0182 20 9.70027 20 9.36875C20 9.03723 19.8683 8.71929 19.6339 8.48487C19.3995 8.25045 19.0815 8.11875 18.75 8.11875Z"
+                        fill="#F53838" />
+                </svg>
+            </button>
+            <button
+                class="next button flex items-center justify-center  cursor-pointer w-[60px] h-[60px] rounded-[50%] bg-[white] hover:bg-[#F53838] transition duration-100 ease-linear z-10 relative border-2 border-[#F53838]"
+                onclick="">
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.25 8.11875H16.075L11.5375 2.66875C11.3253 2.41348 11.2232 2.08438 11.2537 1.75385C11.2842 1.42332 11.4447 1.11843 11.7 0.906253C11.9553 0.69408 12.2844 0.592002 12.6149 0.622477C12.9454 0.652952 13.2503 0.813482 13.4625 1.06875L19.7125 8.56875C19.7545 8.62841 19.7922 8.69108 19.825 8.75625C19.825 8.81875 19.825 8.85625 19.9125 8.91875C19.9692 9.06208 19.9988 9.21464 20 9.36875C19.9988 9.52286 19.9692 9.67543 19.9125 9.81875C19.9125 9.88125 19.9125 9.91875 19.825 9.98125C19.7922 10.0464 19.7545 10.1091 19.7125 10.1688L13.4625 17.6688C13.345 17.8099 13.1978 17.9233 13.0314 18.0011C12.8651 18.0789 12.6836 18.1191 12.5 18.1188C12.2079 18.1193 11.9249 18.0176 11.7 17.8313C11.5734 17.7263 11.4688 17.5974 11.3921 17.452C11.3154 17.3066 11.2682 17.1474 11.2531 16.9837C11.238 16.82 11.2553 16.6549 11.3041 16.4979C11.3529 16.3409 11.4322 16.1951 11.5375 16.0688L16.075 10.6188H1.25C0.91848 10.6188 0.600536 10.4871 0.366116 10.2526C0.131695 10.0182 0 9.70027 0 9.36875C0 9.03723 0.131695 8.71929 0.366116 8.48487C0.600536 8.25045 0.91848 8.11875 1.25 8.11875Z"
+                        fill="#F53838" />
+                </svg>
+            </button>
         </div>
     </section>
     <!-- footer -->
     <footer class="pt-[182px] pb-[100px] bg-[#F8F8F8] relative">
         <div class="container mx-auto px-3 ">
             <div
-                class=" max-w-[1140px] w-full left-[50%] translate-x-[-50%] top-[-28%] absolute bg-white flex items-center justify-between py-[58px] px-[70px] rounded-xl shadow-[4px_10px_60px_-26px_rgba(0,0,0,0.2)]">
+                class=" max-w-[1140px] w-full left-[50%] translate-x-[-50%] top-[-28%] absolute bg-white flex  flex-col md:flex-row gap-7 md:gap-0 items-center items-center justify-between py-[58px] px-[70px] rounded-xl shadow-[4px_10px_60px_-26px_rgba(0,0,0,0.2)]">
                 <div>
                     <p class="font-medium fs_3xl max-w-[371px] text-[#0B132A]">Subscribe Now for Get Special Features!
                     </p>
                     <p class="font-normal fs_md text-[#4F5665] mt-5">Let's subscribe with us and find the fun.</p>
                 </div>
                 <button
-                    class="text-white font-bold fs_md px-[65px] h-[60px] bg-[#F53838] rounded-xl shadow-[#F5383859] hover:shadow-xl transition-shadow duration-200 cursor-pointer">
+                    class="text-white font-bold  whitespace-nowrap fs_md px-[65px] h-[60px] bg-[#F53838] rounded-xl shadow-[#F5383859] hover:shadow-xl transition-shadow duration-200 cursor-pointer">
                     Subscribe Now
                 </button>
             </div>
 
-            <div class="grid grid-cols-2 mt-[60px]">
+            <div class="grid md:grid-cols-2 gap-6 mt-[60px]">
                 <div>
                     <img src="./assets/images/svg/footer logo.svg" alt="image" class="cursor-pointer">
                     <p class="font-normal fs_md text-[#4F5665] max-w-[340px] mt-5"><span

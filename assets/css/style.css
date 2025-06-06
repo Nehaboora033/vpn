@@ -13,6 +13,26 @@
     --text-sm: 14px;
 }
 
+.over-slider {
+    z-index: 2;
+}
+
+.slick-list {
+    overflow: visible;
+    padding: 0 20% 0 0;
+    position: relative;
+}
+
+.slick-list::after {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 4000px;
+    right: 100%;
+    background-color: white;
+}
+
 .heading {
     font-size: var(--text-xl);
 }
@@ -173,7 +193,8 @@
         animation-iteration-count: infinite;
         animation-direction: var(--direction);
         animation-duration: var(--duration);
-    } }
+    }
+}
 
 @keyframes loop {
     0% {
@@ -184,6 +205,7 @@
         transform: translateX(-50%);
     }
 }
-.company img{
+
+.company img {
     max-width: none;
 }

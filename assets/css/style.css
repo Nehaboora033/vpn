@@ -5,6 +5,39 @@
     /* outline:2px solid red; */
 }
 
+/* section5 */
+.loop-slider {
+    .company {
+        animation-name: loop;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: var(--direction);
+        animation-duration: var(--duration);
+    }
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.company img {
+    max-width: none;
+}
+
+/* navbar */
+
+nav.scrolled {
+    box-shadow: 0 -25px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
 /* section6 */
 
 :root {
@@ -156,8 +189,6 @@
         display: flex !important;
         justify-content: center;
     }
-
-
 }
 
 @media(max-width:998px) {
@@ -177,48 +208,34 @@
     }
 }
 
-/* section5 */
-.loop-slider {
-    .company {
-        animation-name: loop;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: var(--direction);
-        animation-duration: var(--duration);
-    }
-}
-
-@keyframes loop {
-    0% {
-        transform: translateX(0);
+@media(min-width:768px) {
+    .over-slider {
+        z-index: 2;
     }
 
-    100% {
-        transform: translateX(-50%);
+    .slick-list {
+        overflow: visible !important;
+        padding: 0 20% 0 0;
+        position: relative;
+    }
+
+    .slick-list::after {
+        content: ' ';
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        width: 4000px;
+        right: 100%;
+        background-color: white;
     }
 }
-
-.company img {
-    max-width: none;
-}
-
-/* navbar */
-
-nav.scrolled {
-    box-shadow: 0 -25px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-
-
-
 
 @media(max-width:1024px) {
 
     .activeNavBar .menu-icon span:first-child {
         transform: rotate(44deg);
         transform-origin: left;
-        transition:all 200ms linear;
+        transition: all 200ms linear;
     }
 
     .activeNavBar .menu-icon span:nth-child(2) {
